@@ -80,18 +80,10 @@ async function sendMessage() {
       headers: {
         "Content-Type": "application/json",
       },
-     body: JSON.stringify({
-       messages: [
-         {
-           role: "assistant",
-           content: "You are a helpful, friendly assistant. Provide concise and accurate responses.",
-         },
-         {
-           role: "user",
-           content: message,
-         },
-      ],
-   }),
+      body: JSON.stringify({
+        messages: chatHistory,
+      }),
+    });
 
     });
 
