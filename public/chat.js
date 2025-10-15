@@ -140,7 +140,7 @@ async function sendMessage() {
     console.error("Error:", error);
     addMessageToChat(
       "assistant",
-      "警告!您可能問了不該問的問題",
+      "Sorry, there was an error processing your request.",
     );
   } finally {
     // Hide typing indicator
