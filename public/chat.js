@@ -74,8 +74,7 @@ async function sendMessage() {
     // Scroll to bottom
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
-    // Send request to API
-    const lastMessages = chatHistory.slice(-2);
+    // Send request to API    
     const response = await fetch("/api/chat", {
       method: "POST",
       headers: {
