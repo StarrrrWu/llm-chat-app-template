@@ -76,10 +76,6 @@ async function sendMessage() {
 
     // Send request to API
     const lastMessages = chatHistory.slice(-2);
-    const systemPrompt = {
-  role: "assistant",
-  content: "You are a helpful, friendly assistant. Provide concise and accurate responses.",
-};
     const response = await fetch("/api/chat", {
       method: "POST",
       headers: {
