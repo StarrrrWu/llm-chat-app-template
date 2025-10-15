@@ -92,7 +92,7 @@ async function sendMessage() {
          },
       ],
    }),
-
+ });
     // Handle errors
     if (!response.ok) {
       throw new Error("Failed to get response");
