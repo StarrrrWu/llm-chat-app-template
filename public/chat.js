@@ -138,7 +138,7 @@ async function sendMessage() {
     console.error("Error:", error);
     addMessageToChat(
       "assistant",
-      "Sorry, there was an error processing your request.",
+      "很抱歉，你發送的問題被封鎖，請重新發問",
     );
   } finally {
     // Hide typing indicator
